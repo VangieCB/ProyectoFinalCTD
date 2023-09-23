@@ -1,0 +1,162 @@
+.card-cat-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.card-cat {
+  background-color: #FDF2E5;
+  padding: 0;
+  width: 17%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  border: none;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-cat .img-cat{
+  display: block;
+  background-size:cover;
+  height: 90px;
+}
+
+.card-cat p {
+  margin: 0;
+  margin-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  color: #3400A1;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.card-cat button {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  background-color: #FFAE4F;
+  border: none;
+  border-radius: 10px;
+  font-family: Livvic;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  padding: 5%;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease;
+  
+}
+.card-cat a {
+  text-decoration: none;
+}
+.card-cat button:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+.card-cat .fav-button {
+  background-color: #FDF2E5;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card-cat .fav-button:hover {
+  transform: scale(1.5)
+}
+
+.categorias {
+  color: #3400A1;
+  margin-left: 2%;
+  margin-bottom: 0%;
+  font-family: 'Livvic', sans-serif;
+  font-size: 18px;
+  text-align: left;
+}
+
+@media (max-width: 910px) {
+
+  .categorias {
+    font-size: 17px;
+  }
+
+}
+
+@media (max-width: 375px) {
+
+    /* Ocultar categorías adicionales más allá de las primeras 3 */
+    .card-cat-container .card-cat:nth-child(n+4) {
+      display: none;
+    }
+  
+    /* Mostrar el botón "Ver Más" en resoluciones de 375px o menores */
+    .card-cat-container .ver-mas-button {
+      display: block;
+      font-size: 12px; /* Tamaño de fuente más pequeño para el botón "Ver Más" */
+      padding: 5px 10px; /* Espaciado más pequeño para el botón "Ver Más" */
+    }  
+  .card-cat-container{
+    width: 100vw;
+    margin-top: 2%;
+    justify-content: flex-start;
+  }
+  .categorias {
+    font-size: 14px;
+  }
+
+  .card-cat .img-cat{
+    display:none;
+  }
+
+  .card-cat {
+    background-color: #FDF2E5;
+    padding: 0;
+    width: 25%;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-cat p {
+    margin: 0;
+    margin-left: 15%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+    color: #3400A1;
+    font-size: 12px;
+    font-weight: 600;
+  
+  }
+  
+  .card-cat button {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    background-color: #FFAE4F;
+    border: none;
+    border-radius: 10px;
+    font-family: Livvic;
+    font-size: 10px;
+    font-weight: 500;
+    color: white;
+    padding: 5%;
+    cursor: pointer;
+    transition: text-decoration 0.3s ease;
+    
+  }
+  
+}

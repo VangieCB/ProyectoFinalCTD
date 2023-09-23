@@ -1,0 +1,130 @@
+.personal-info-section{
+    
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+
+.myprofile-reservation{
+
+    display: flex;
+    align-items: flex-start;
+    margin-left: 10px;
+   
+}
+
+
+.myprofile-avatar{
+    margin-top: -2%;
+}
+
+.myprofile-mail{
+
+    margin-bottom: 8%;
+    margin-top: -22%;
+    margin-left: 63%;
+}
+
+
+.personal-info-title{
+
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10%;
+   
+   
+    
+}
+
+
+.reserve-now-button{
+
+    width: 100%;
+    height: 58px;
+    background-color:  rgba(255, 174, 79, 1);
+    border-radius:  5px;
+    color: white;
+    font-size:  18px;
+    text-align:  center;
+    display: flex;
+    justify-content:  center;
+    align-items:  center;
+    margin-top: 0.2%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Livvic', sans-serif;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+}
+
+.master-container {
+    margin-bottom: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#master-container {
+    margin-top: 1vh;
+}
+
+  /* Estilos para el box de imagenes */
+  .images-container {
+    display: flex;
+    width: 60vw;
+    height: 50vh;
+    margin-top: 2%;
+}
+
+.img-main-container {
+    width: 70%;
+    height: 100%;
+}
+
+.img-main {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.img-add-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-add {
+    width: 100%;
+    height: 20%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+.card-detail{
+    margin-bottom: 20vh;
+}
+
+.event-reservation{
+    margin-top: 5%;
+    margin-left: 8%;
+    margin-bottom: 20vh;
+    
+}
+
+#card-detail-container {
+    height: auto;
+}
+
+#event-reservation {
+    margin-bottom: 0;
+}

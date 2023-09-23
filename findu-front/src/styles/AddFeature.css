@@ -1,0 +1,123 @@
+.form-container {
+    margin-left: 20%;
+    font-family: 'Livvic', sans-serif;
+    margin-top: 17vh;
+}
+
+
+h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #3400A1;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: #3400A1;
+    margin-bottom: 20px;
+}
+
+
+.input-box {
+    margin-bottom: 20px;
+    
+}
+
+.input-field {
+    width: 90%;
+    height: 40px;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 28px;
+    background-color: #FDF2E5;
+    position: relative;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+  .icon-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1310px;
+    margin: 0 auto;
+    margin-right: 20px;
+    gap: 10px; 
+  }
+    
+  .icon-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .icon-option:hover {
+    border-color: #FFAE4F;
+  }
+  
+  .selected {
+    border-color: #FFAE4F;
+  }
+
+
+.guardar-button {
+    width: 700px;
+    height: 55px;
+    margin-top: 1rem;
+    font-family: 'Livvic';
+    font-style: normal;
+    margin-left: 7%;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #FFAE4F;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.popup p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #3400A1;
+}
+
+.popup button {
+    background-color: #FDF2E5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #3400A1;
+}
+
+.popup .button-container {
+    display: flex;
+    justify-content: center;
+}
+
+

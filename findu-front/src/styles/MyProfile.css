@@ -1,0 +1,114 @@
+.my-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatar-container {
+    background-color: #ffae4f;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 8%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Livvic', sans-serif;
+}
+
+.avatar2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #FFAE4F;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-inline: 10px;
+    /* Cambiado de margin-inline a margin-left */
+    font-family: 'Livvic', sans-serif;
+    cursor: pointer;
+}
+
+.name,
+.email {
+    font-size: 20px;
+    color: rgba(52, 0, 161, 1);
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+
+.logout-button,
+.edit-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Livvic", sans-serif;
+    cursor: pointer;
+    width: 280px;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.logout-button {
+    background-color: #ffae4f;
+    border: 1px solid transparent;
+    color: white;
+
+}
+
+.edit-button {
+    background-color: white;
+    border: 2px solid rgba(255, 174, 79, 1);
+    color: rgba(255, 174, 79, 1);
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 910px) {
+
+
+
+    .avatar-container {
+
+        margin-top: 18%;
+
+
+
+    }
+
+
+
+
+}
+
+
+@media (max-width: 375px) {
+
+
+
+
+    /* .avatar-container {
+
+        margin-top: 45%;
+
+    } */
+
+    .my-profile {
+        margin-top: 10vh;
+    }
+}

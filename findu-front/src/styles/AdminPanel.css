@@ -1,0 +1,46 @@
+.admin-panel-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vh;
+
+}
+
+#admin-panel {
+    display: flex;
+    margin-left: 2%;
+    color: #3400A1;
+    font-family: 'Livvic', sans-serif;
+}
+
+.element-container {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.element {
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3%;
+    margin: 0% 2%;
+    margin-bottom: 1%;
+    align-items: center;
+    background-color: #FDF2E5;
+    font-weight: bold;
+    color: #FFAE4F;
+    border-radius: 28px;
+    height: 15%;
+}
+
+.element button {
+    border-radius: 28px;
+    border: 1px solid transparent;
+    font-size: 14px;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    background-color: #FFAE4F;
+    cursor: pointer;
+    width: 18em;
+    height: 3em;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,33 @@
+.users-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 11vh;
+
+}
+
+#usuarios{
+    display: flex;
+    margin-left: 2%;
+    color: #3400A1;
+    font-family: 'Livvic', sans-serif;
+}
+
+.element-container{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.element{
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 3%;
+    margin: 0% 2%;
+    margin-bottom: 1%;
+    align-items: center;
+    background-color: #FDF2E5;
+    font-weight: bold;
+    color: #FFAE4F;
+    border-radius: 28px;
+    height: 15%;
+}

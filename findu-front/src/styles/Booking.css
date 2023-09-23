@@ -1,0 +1,184 @@
+
+.titulo-booking{
+  font-family: 'Livvic', sans-serif;
+  margin-top: 15vh;
+  text-align: left;
+  padding-left: 5vh;
+  font-size: 24px;
+  color: #3400A1;
+}
+
+.tit-booking{
+  font-family: 'Livvic', sans-serif;
+  text-align: left;
+  font-size: 24px;
+  color: #3400A1;
+  margin-bottom: 0;
+  text-indent: 2.5vh;
+  margin-bottom: 1vh;
+  margin-top: 1vh;
+}
+
+.card-booking-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3vh; /* Aumenta el valor del gap a 30px */
+  max-width: 96%;
+  margin: 1vh;
+  padding-bottom: 10vh;
+  padding-left: 2vh;
+  grid-auto-rows: auto;
+}
+
+.card-booking {
+  background-color: #FDF2E5;
+  margin-left: 3%;
+  width: 100%;
+  border-radius: 2vh;
+  text-indent: 1vh;
+  text-align: left;
+  margin: 1%;
+  box-shadow: 0.1vh 0.1vh 2vh rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-indent: 1vh;
+}
+
+.label-booking {
+  margin: 0;
+  color: #3400A1;
+  font-size: 16px;
+  font-family: 'Livvic', sans-serif;
+  margin-bottom: 3%;
+  padding-right: 20%;
+}
+
+.li-booking {
+  padding-left: 0;
+  color: #3400A1;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Livvic', sans-serif;
+  margin-left: 6vh;
+}
+
+.valor-reco {
+  font-weight:400;
+}
+
+  /* .modal-buttonn {
+    color: white;
+    border-color: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #FFAE4F;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 42%;
+    margin-top: 9%;
+  } */
+
+
+  .pagination {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+    font-family: 'Livvic', sans-serif;
+    color: #3400A1;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .pagination button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+  
+  .pagination .active {
+    color: #FFAE4F;
+  }
+  
+  .pagination .arrow {
+    font-size: 20px;
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 768px) {
+
+    .recomendaciones {
+      font-size: 17px;
+    }
+
+    .card-booking-container {
+      grid-template-rows: 30% 30% 30%; 
+    }
+
+    .card-booking {
+      margin-bottom: -5vh;
+    }
+
+    .car-booking-text{
+      height: 150px;
+      margin-bottom: 200px;
+    }
+
+    .valor-reco {
+      font-weight:400;
+      font-size: 12px;
+    }
+
+    .label-booking {
+      font-size: 13px;
+    }
+
+    .tit-booking{
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+  
+    .recomendaciones {
+      font-size: 16px;
+    }
+
+    .card-booking-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      max-width: 90%;
+      margin:auto;
+      grid-template-rows: 20% 20% 20%;     
+    }
+
+    .card-booking {
+      margin-bottom: -15px;
+
+    }
+
+    .card-booking-text{
+      height: 100%;
+    }
+
+    .valor-reco {
+      font-weight:400;
+      font-size: 8px;
+    }
+
+    .label-booking {
+      font-size: 8px;
+    }
+
+    .titulo-booking{
+      font-size: 18px;
+    }
+
+    .tit-booking{
+      font-size: 12px;
+    }
+    
+  }

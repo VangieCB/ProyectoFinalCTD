@@ -1,0 +1,59 @@
+/* DropMenu.css */
+.dropdown-menu {
+  position: absolute;
+  top: 100%; /* Coloca el menú debajo del botón o elemento que lo activa */
+  right: 0; /* Puedes ajustar la posición según tus necesidades */
+  background-color: #C2AAD1; /* Color de fondo del menú */
+  border: 1px solid #ccc; /* Borde del menú */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 15px; /* Espaciado interno */
+  z-index: 1; /* Asegura que el menú esté en la parte superior de otros elementos */
+  text-decoration: none;
+  margin-right: 45px;
+  
+
+}
+
+hr{border-color: #3400A1;}
+.link-menu{
+  text-decoration: none;
+  color: #3400A1;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+.dropdown-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-menu li {
+  margin: 0;
+  padding: 8px 16px; /* Espaciado interno para cada elemento de la lista */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #3400A1; /* Color de texto */
+  cursor: pointer; /* Cambia el cursor al pasar sobre los elementos */
+  transition: background-color 0.2s ease; /* Transición de color de fondo */
+  padding-left: 80px;
+}
+
+.dropdown-menu li:hover {
+  background-color: #FFAE4F; /* Color de fondo al pasar el mouse por encima */
+}
+
+.dropdown-menu button.logout-button {
+  display: block;
+  margin-top: 10px; /* Espaciado superior para el botón */
+  padding: 8px 16px; /* Espaciado interno del botón */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: #fff; /* Color de texto del botón */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-menu button.logout-button:hover {
+  background-color: #0056b3; /* Cambia el color de fondo al pasar el mouse por encima */
+}

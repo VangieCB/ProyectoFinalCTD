@@ -1,0 +1,340 @@
+
+.error-message {
+  color:  white;
+  font-family: 'Livvic', sans-serif;
+  font-size: 1px;
+}
+
+  /* Estilos generales */
+body {
+  font-family: 'Livvic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.formulario-container {
+  margin-top: -10vh;
+  margin-bottom: 10vh; /* Agrega un margen al contenedor */
+}
+
+/* Estilos para el formulario */
+.registro {
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+.titulo2 {
+  color: rgba(52, 0, 161, 1);
+  font-size: 26px;
+  font-weight: bold;
+  max-width: fit-content;
+  margin-left: 3%;
+}
+
+.titulo {
+  color: rgba(52, 0, 161, 1);
+  font-size: 18px;
+  max-width: fit-content;
+  margin-left: 4%;
+  margin-bottom: 0.5%;
+  
+}
+ 
+.input-registro {
+  width: 700px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  height: 45px;
+  background-color: rgba(253, 242, 229, 1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  text-indent: 2.5vh;
+  
+}
+
+.botonRegistro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Livvic', sans-serif;
+  color: white;
+  font-weight: bold;
+  background-color: #FFAE4F;
+  cursor: pointer;
+  width: 713px;
+  height: 55px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 35px;
+}
+
+.iniciarSesionBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 2px solid rgba(255, 174, 79, 1);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Livvic', sans-serif;
+  color: rgba(255, 174, 79, 1);
+  background-color: white;
+  cursor: pointer;
+  width: 713px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+@media (max-width: 910px) {
+
+
+  .registro {
+
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    
+    
+    
+    
+  }
+
+  .titulo2 {
+    color: rgba(52, 0, 161, 1);
+    font-size: 26px;
+    font-weight: bold;
+    max-width: fit-content;
+    margin-left: 3%;
+    
+    
+  }
+  
+  .titulo {
+    color: rgba(52, 0, 161, 1);
+    font-size: 18px;
+    max-width: fit-content;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+  
+    
+  }
+   
+    
+  .input-registro {
+    width: 700px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    height: 45px;
+    background-color: rgba(253, 242, 229, 1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .botonRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #FFAE4F;
+    cursor: pointer;
+    width: 713px;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+  }
+  
+  .iniciarSesionBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 174, 79, 1);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: rgba(255, 174, 79, 1);
+    background-color: white;
+    cursor: pointer;
+    width: 713px;
+    height: 55px;
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .registro {
+
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+    
+    
+    
+    
+  }
+
+
+
+  .titulo2 {
+    color: rgba(52, 0, 161, 1);
+    font-size: 26px;
+    font-weight: bold;
+    max-width: fit-content;
+    margin-left: 2%;
+    margin-bottom: 1%;
+    
+    
+  }
+  
+  .titulo {
+    color: rgba(52, 0, 161, 1);
+    font-size: 18px;
+    max-width: fit-content;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+  
+    
+  }
+   
+    
+  .input-registro {
+    width: 267px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    height: 45px;
+    background-color: rgba(253, 242, 229, 1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .botonRegistro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #FFAE4F;
+    cursor: pointer;
+    width: 280px;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+  }
+  
+  .iniciarSesionBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 174, 79, 1);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: rgba(255, 174, 79, 1);
+    background-color: white;
+    cursor: pointer;
+    width: 280px;
+    height: 55px;
+    margin-top: 20px;
+  }
+
+
+
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-container {
+  background-color: transparent;
+  padding: 20hv;
+  border-radius: 8vh;
+}
+
+.spinner {
+  border: 4vh solid rgba(255, 255, 255, 0.3);
+  border-top: 4vh solid #3400A1;
+  border-radius: 50%;
+  width: 10vh;
+  height: 10vh;
+  animation: spin 2s linear infinite, color-change 5s alternate infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes color-change {
+  0% { border-top-color: #FFAE4F; }
+  100% { border-top-color: #3400A1; }
+}
+
+/* Estilo para el modal de confirmación */
+.confirmation-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FFAE4F;
+  width: 20vh;
+  padding: 3vh;
+  border: 0.2vh solid #3400A1;
+  border-radius: 2vh;
+  box-shadow: 0vh 0vh 10vh rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  text-align: center;
+}
+
+/* Estilo para el texto dentro del modal */
+.confirmation-modal p {
+  margin: 0;
+  font-size: 18px;
+  color: #3400A1;
+}
+
+/* Estilo para el fondo oscurecido detrás del modal */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Un fondo semitransparente */
+  z-index: 999; /* Un z-index inferior al del modal para que esté detrás */
+}

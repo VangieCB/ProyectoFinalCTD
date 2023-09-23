@@ -1,0 +1,269 @@
+.bienvenida {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-inline: auto;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+}
+
+
+
+.error-message {
+  color: white;
+  font-family: 'Livvic', sans-serif;
+  font-size: 1px;
+}
+
+
+
+
+/* Estilos generales */
+body {
+  font-family: 'Livvic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para el formulario */
+.registro {
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 20px;
+  margin-top: 4vh;
+}
+
+.titulo2 {
+  color: rgba(52, 0, 161, 1);
+  font-size: 26px;
+  font-weight: bold;
+  max-width: fit-content;
+  margin-left: 3%;
+}
+
+.titulo {
+  color: rgba(52, 0, 161, 1);
+  font-size: 18px;
+  max-width: fit-content;
+  margin-left: 4%;
+  margin-bottom: 0.5%;
+}
+
+
+.input-inicioSesion {
+  width: 700px;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 28px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  height: 45px;
+  background-color: rgba(253, 242, 229, 1);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  text-indent: 2.7vh;
+
+}
+
+.inicioSesionBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Livvic', sans-serif;
+  color: white;
+  font-weight: bold;
+  background-color: #FFAE4F;
+  cursor: pointer;
+  width: 713px;
+  height: 55px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 35px;
+}
+
+.registroBoton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 28px;
+  border: 2px solid rgba(255, 174, 79, 1);
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Livvic', sans-serif;
+  color: rgba(255, 174, 79, 1);
+  background-color: white;
+  cursor: pointer;
+  width: 713px;
+  height: 55px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 910px) {
+
+
+  .registro {
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+  }
+
+  .titulo2 {
+    color: rgba(52, 0, 161, 1);
+    font-size: 26px;
+    font-weight: bold;
+    max-width: fit-content;
+    margin-left: 3%;
+  }
+
+  .titulo {
+    color: rgba(52, 0, 161, 1);
+    font-size: 18px;
+    max-width: fit-content;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+
+
+  }
+
+
+  .input-inicioSesion {
+    width: 700px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    height: 45px;
+    background-color: rgba(253, 242, 229, 1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .inicioSesionBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #FFAE4F;
+    cursor: pointer;
+    width: 713px;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+  }
+
+  .registroBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 174, 79, 1);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: rgba(255, 174, 79, 1);
+    background-color: white;
+    cursor: pointer;
+    width: 713px;
+    height: 55px;
+    margin-top: 20px;
+  }
+
+}
+
+
+@media (max-width: 360px) {
+
+  .registro {
+
+    margin: 20px auto;
+    max-width: 700px;
+    padding: 20px;
+
+
+
+
+  }
+
+
+
+  .titulo2 {
+    color: rgba(52, 0, 161, 1);
+    font-size: 26px;
+    font-weight: bold;
+    max-width: fit-content;
+    margin-left: 2%;
+    margin-bottom: 1%;
+
+
+  }
+
+  .titulo {
+    color: rgba(52, 0, 161, 1);
+    font-size: 18px;
+    max-width: fit-content;
+    margin-left: 4%;
+    margin-bottom: 0.5%;
+
+
+  }
+
+
+  .input-inicioSesion {
+    width: 267px;
+    padding: 5px;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    font-family: 'Livvic', sans-serif;
+    font-size: 16px;
+    height: 45px;
+    background-color: rgba(253, 242, 229, 1);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .inicioSesionBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    font-weight: bold;
+    background-color: #FFAE4F;
+    cursor: pointer;
+    width: 280px;
+    height: 55px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 35px;
+  }
+
+  .registroBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    border: 2px solid rgba(255, 174, 79, 1);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Livvic', sans-serif;
+    color: rgba(255, 174, 79, 1);
+    background-color: white;
+    cursor: pointer;
+    width: 280px;
+    height: 55px;
+    margin-top: 20px;
+  }
+}

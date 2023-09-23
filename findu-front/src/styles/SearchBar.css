@@ -1,0 +1,966 @@
+.search-bar {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  /* width:100%; */
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  background-color: white;
+  color: #3400A1;
+  /*font-family: 'Livvic', sans-serif;
+  font-size: 16px;*/
+  flex-grow: 1;
+}
+
+.search-bar-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 70vh;
+  height: 5vh;
+  background-color: #FDF2E5;
+  border: 1px solid #FDF2E5;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 10px;
+  margin-right: 15%;
+}
+
+.search-bar-input input {
+  flex-grow: 1;
+  /* Hace que el campo de entrada ocupe el espacio restante */
+  border: none;
+  /* Elimina el borde del campo de entrada */
+  background-color: transparent;
+  /* Hace que el fondo del campo de entrada sea transparente */
+  font-family: 'Livvic', sans-serif;
+  color: #3400A1;
+  font-size: 16px;
+  padding-right: 30%;
+}
+
+.search-bar-x {
+  position: absolute;
+  left: 29%; /* Ajusta la posición a la derecha según sea necesario */
+  transform: translate(-123%,-150%); /* Centra el botón horizontal y verticalmente */
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3400A1;
+  font-size: 20px;
+  z-index: 1;
+}
+
+.react-autosuggest__input {
+  width: 100%;
+  /* Asegura que el campo de entrada ocupe todo el ancho */
+}
+
+/* Añade un borde en el enfoque para indicar que se puede hacer clic */
+.react-autosuggest__input:focus {
+  border-color: #FFAE4F;
+  /* Cambia el color del borde cuando se hace clic */
+}
+
+/* Personaliza el estilo de la lista de sugerencias */
+.react-autosuggest__suggestions-list {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  border: 1px solid none;
+  /* Agrega un borde alrededor de la lista */
+  border-radius: 4px;
+  position: absolute;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  width: 70vh; /* Asegura que la lista de sugerencias tenga el mismo ancho que el campo de entrada */
+  z-index: 1; /* Asegura que la lista de sugerencias se muestre encima de otros elementos */
+  color: #3400A1;
+  text-indent: 11px;
+}
+
+/* Estilo para cada elemento de sugerencia */
+.react-autosuggest__suggestion {
+  padding: 1px;
+  background-color: #FDF2E5;
+  border-radius: 4px;
+  cursor: pointer;
+  /* Cambia el cursor al pasar por encima de una sugerencia */
+}
+
+/* Estilo cuando una sugerencia está resaltada o seleccionada */
+.react-autosuggest__suggestion--highlighted {
+  background-color: #FFAE4F;
+  /* Cambia el color de fondo cuando se resalta una sugerencia */
+  color: white;
+}
+
+.date-picker {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  width: 100px;
+}
+
+.search-bar-date-start {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 10vw;
+  height: 50px;
+  margin-left: -10%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 70px;
+}
+
+.search-bar-date-end {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 10vw;
+  height: 50px;
+  margin-left: 40%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 70px;
+}
+
+.calendar-icon-start {
+  position: absolute;
+  margin-right: 0px;
+  /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: -2%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 2em !important;
+}
+
+.calendar-icon-end {
+  position: absolute;
+  margin-right: 0px;
+  /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: 135%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 2em;
+}
+
+.calendar-label {
+  border-radius: 10px;
+  margin-left: 10px;
+  /* Ajusta el valor para alinear el ícono a la derecha del DatePicker */
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para el encabezado del calendario */
+.react-datepicker__header {
+  background-color: #FDF2E5;
+  /* Fondo del encabezado */
+  color: white;
+  /* Color del texto en el encabezado */
+  border: none;
+  /* Borde del encabezado */
+  ;
+}
+
+/* Estilo para los botones de navegación del calendario (mes anterior y siguiente) */
+.react-datepicker__navigation {
+  color: #FFAE4F;
+  /* Color de los botones de navegación */
+}
+
+/* Estilo para el título del mes en el encabezado */
+.react-datepicker__current-month {
+  font-size: 120%;
+  /* Tamaño de fuente del título del mes */
+  color: #3400A1;
+  /* Color del texto */
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+/* Estilo para los nombres de los días en el calendario */
+.react-datepicker__day-name {
+  font-size: 100%;
+  /* Tamaño de fuente */
+  font-weight: normal;
+  /* Peso de fuente en negrita */
+  color: #3400A1;
+  /* Color de texto */
+  text-transform: capitalize;
+  /* Otros estilos que desees aplicar */
+}
+
+/* Estilo para el calendario */
+.custom-calendar-start {
+  position: sticky;
+  font-family: 'Livvic', sans-serif;
+  background-color: #FDF2E5;
+  /* Fondo del calendario */
+  color: #3400A1;
+  /* Color del texto */
+  border: 1px solid #FDF2E5;
+  /* Borde del calendario */
+  margin-left: -95px;
+}
+
+.custom-calendar-end {
+  position: sticky;
+  font-family: 'Livvic', sans-serif;
+  background-color: #FDF2E5;
+  /* Fondo del calendario */
+  color: #3400A1;
+  /* Color del texto */
+  border: 1px solid #FDF2E5;
+  /* Borde del calendario */
+  margin-left: -40px;
+}
+
+/* Estilo para el contenedor del calendario */
+.calendar-wrapper {
+  /*position: relative; Establece la posición relativa para alinear el calendario */
+  display: inline-block;
+  /* Alinea el calendario en línea con el texto */
+}
+
+/* Estilo para los días del calendario */
+.react-datepicker__day {
+  color: #3400A1;
+  /* Color del texto de los días */
+  transition: background-color 0.2s
+}
+
+.react-datepicker__day:hover {
+  background-color: #FFAE4F
+}
+
+/* Estilo para el día actual */
+.react-datepicker__day--today {
+  color: #FFAE4F;
+  /* Color del texto del día actual */
+  background-color: #FDF2E5;
+}
+
+/* Estilo para los días seleccionados */
+.react-datepicker__day--selected {
+  background-color: #3400A1;
+  /* Fondo de los días seleccionados */
+  color: white;
+  /* Color del texto de los días seleccionados */
+  border-radius: 30px;
+  /* Bordes redondeados */
+}
+
+.start-date-picker {
+  background-color: #FFAE4F;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  font-family: 'Livvic', sans-serif;
+}
+
+form {
+  margin-top: 14vh;
+  justify-content: space-between;
+  width: 98%;
+  align-self: center;
+  display: flex;
+  margin-left: 1%;
+  background-color: transparent;
+  border-color: transparent;
+  border: transparent;
+  outline: none;
+  text-align: center;
+}
+
+.search-bar-trash-button {
+  display: flex;
+  /* Establecer el display en flex para los elementos internos */
+  /* justify-content: space-between; */
+  /* Espacio entre los elementos internos */
+  align-items: center;
+  /* Centrar verticalmente los elementos */
+  width: 15vw;
+  height: 50px;
+  margin-left: 10%;
+  background-color: #FDF2E5;
+  color: #FFAE4F;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  font-size: 12px;
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+}
+
+.search-bar-button {
+  display: flex;
+  /* Establecer el display en flex para los elementos internos */
+  justify-content: space-between;
+  /* Espacio entre los elementos internos */
+  align-items: center;
+  /* Centrar verticalmente los elementos */
+  width: 15vw;
+  /* Ocupar todo el ancho del botón */
+  height: 50px;
+  /* Cambiar la altura */
+  margin-left: 0%;
+  background-color: #3400A1;
+  /* Color de fondo del botón */
+  color: #FFAE4F;
+  /* Color del texto */
+  font-weight: bold;
+  border: none;
+  /* Eliminar borde */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+}
+
+.search-bar-trash-button:hover {
+  background-color: #FFAE4F;
+  /* Cambia el color de fondo al pasar el ratón */
+  color: #FDF2E5;
+}
+
+.search-bar-button:hover {
+  background-color: #FFAE4F;
+  /* Cambia el color de fondo al pasar el ratón */
+  color: #FDF2E5;
+}
+
+.search-icon {
+  margin-left: 5%;
+  /* Espacio entre el icono y el texto de búsqueda */
+  font-size: 20px;
+  transform: rotate(90deg)
+}
+
+.search-icon-trash {
+  margin-right: 1.5rem;
+  /* Espacio entre el icono y el texto de búsqueda */
+  font-size: 2.5em;
+
+}
+
+/* .search-text-trash {
+  margin-right: 50%;  
+} */
+/* Espacio entre el icono y el texto de búsqueda */
+
+.search-text {
+  margin-right: 40%;
+  /* Espacio entre el icono y el texto de búsqueda */
+}
+
+.search-clear {
+  margin-left: auto;
+  /* Empuja la "x" al extremo derecho del botón */
+  cursor: pointer;
+  /* Cambia el cursor al estilo de puntero al pasar el ratón */
+}
+
+.search-clear:hover {
+  color: #FF0000;
+  /* Cambia el color de la "x" al pasar el ratón */
+}
+
+::placeholder {
+  color: #FFAE4F;
+  background-color: transparent;
+  font-family: 'Livvic', sans-serif;
+  font-size: medium, 16px;
+}
+
+/* Cambiar el color del borde cuando el input está enfocado */
+/* .search-bar input:focus {
+    border-color: transparent;
+    border: none; 
+    outline: none;/* Cambia el color del borde al hacer clic
+  } */
+
+/* Otra opción: Cambiar el color del borde cuando el input está activo (cuando haces clic y mantienes presionado el mouse)
+  .search-bar input:active {
+    border-color: transparent;
+    border: none;
+    outline: none; Cambia el color del borde al hacer clic
+  } */
+  @media (max-width: 1440px) {
+  
+.search-bar-input {
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  width: 27vw;
+  height: 50px;
+  background-color: #FDF2E5;
+  border: 1px solid #FDF2E5;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 10px;
+  margin-right: 18%;
+}
+
+.search-bar-date-start {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 15vw;
+  height: 50px;
+  margin-left: -12%;
+  margin-right: 10%;
+  border-radius: 10px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 70px;
+}
+
+.search-bar-date-end {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 15vw;
+  height: 50px;
+  margin-left: 28%;
+  margin-right: 5%;
+  border-radius: 10px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 70px;
+}
+
+.calendar-icon-start {
+  position: absolute;
+  margin-right: 0px;
+  /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: -110%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 5em;
+}
+.calendar-label{
+  margin-left: -300%;
+}
+.calendar-icon-end {
+  position: absolute;
+  margin-right: 0px;
+  /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: -150%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 2em;
+  margin-left:90%;
+}
+
+    form{
+      margin-top: 14vh;
+      justify-content: space-between;
+      width: 98%;
+      align-self: center;
+      display: flex;
+      margin-left: 1%;  
+      background-color: transparent;
+      border-color: transparent;
+      border: transparent; 
+      outline: none;
+      text-align: center;
+    }
+    
+.search-bar-trash-button {
+  display: flex;
+  /* Establecer el display en flex para los elementos internos */
+  /* justify-content: space-between; */
+  /* Espacio entre los elementos internos */
+  align-items: center;
+  /* Centrar verticalmente los elementos */
+  width: 15vw;
+  height: 55px;
+  margin-left: 11%;
+  background-color: #FDF2E5;
+  color: #FFAE4F;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  text-indent: 15px;
+}
+
+.search-bar-button {
+  display: flex;
+  /* Establecer el display en flex para los elementos internos */
+  justify-content: space-between;
+  /* Espacio entre los elementos internos */
+  align-items: center;
+  /* Centrar verticalmente los elementos */
+  width: 15vw;
+  /* Ocupar todo el ancho del botón */
+  height: 55px;
+  /* Cambiar la altura */
+  margin-left: 0%;
+  background-color: #3400A1;
+  /* Color de fondo del botón */
+  color: #FFAE4F;
+  /* Color del texto */
+  font-weight: bold;
+  border: none;
+  /* Eliminar borde */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  padding: 10px 20px;
+  /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  cursor: pointer;
+  /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  margin-left: -2%;
+}
+
+.search-text-trash {
+  margin-right: 15%;
+  /* Espacio entre el icono y el texto de búsqueda */
+}
+
+.search-text {
+  margin-right: 25%;
+  /* Espacio entre el icono y el texto de búsqueda */
+}
+    
+  }
+  @media (max-width:768px) {
+    form{
+      margin-top: 12vh;
+      justify-content: space-between;
+      width: 98%;
+      align-self: center;
+      display: flex;
+      margin-left: 1%;  
+      background-color: transparent;
+      border-color: transparent;
+      border: transparent; 
+      outline: none;
+      text-align: center;
+    }
+    .search-bar-input {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 40px;
+      background-color: #FDF2E5;
+      border: 1px solid #FDF2E5;
+      border-radius: 5px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #3400A1;
+      font-family: 'Livvic', sans-serif;
+      font-size: 16px;
+      text-indent: 10px;
+    }
+    
+    .search-bar-input input {
+      flex-grow: 1; /* Hace que el campo de entrada ocupe el espacio restante */
+      border: none; /* Elimina el borde del campo de entrada */
+      background-color: transparent; /* Hace que el fondo del campo de entrada sea transparente */
+      font-family: 'Livvic', sans-serif;
+      color: #3400A1;
+      font-size: 16px;
+      padding-right: 30%;
+    }
+    
+    .search-bar-x {
+      position: absolute;
+      left: 29%; /* Ajusta la posición a la derecha según sea necesario */
+      transform: translate(-123%,-150%); /* Centra el botón horizontal y verticalmente */
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #3400A1;
+      font-size: 20px;
+      z-index: 1;
+    }
+    
+.date-picker {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  
+  width: 100px;
+}
+
+.search-bar-date-start{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 115%;
+  height: 40px;
+  margin-left: -10%;
+  margin-right: 0%;
+  border-radius: 5px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+.search-bar-date-end{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 115%;
+  height: 40px;
+  margin-left: 10%;
+  margin-right: 0%;
+  border-radius: 5px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  text-indent: 10px;
+}
+
+.calendar-icon-start{
+  position: absolute;
+  margin-right: 0px; /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 10%;
+}
+
+.calendar-icon-end{
+  position: absolute;
+  margin-right: 0px; /* Ajusta la posición del ícono según tus necesidades */
+  margin-left: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #FFAE4F;
+  font-size: 20px;
+}
+
+
+.search-bar-trash-button {
+  display: flex; /* Establecer el display en flex para los elementos internos */
+  /* justify-content: space-between; */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 15%;
+  height: 45px;
+  margin-left: 3%;
+  background-color: #FDF2E5;
+  color: #FFAE4F;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  font-size: 12px;
+  cursor: pointer; /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  font-size: 12px;
+
+}
+
+.search-bar-button {
+  display: flex; /* Establecer el display en flex para los elementos internos */
+  justify-content: center; /* Espacio entre los elementos internos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 15%; /* Ocupar todo el ancho del botón */
+  height: 45px; /* Cambiar la altura */
+  margin-left: -1%;
+  background-color: #3400A1; /* Color de fondo del botón */
+  color: #FFAE4F; /* Color del texto */
+  font-weight:600;
+  border: none; /* Eliminar borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  cursor: pointer; /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  font-size: 12px;
+
+}
+
+#calendar-icon-1 {
+  display: none;
+}
+
+#calendar-icon-2 {
+  display: none;
+}
+
+#search-text-trash {
+  display: none;
+}
+
+.search-text {
+  display: none;
+}
+
+.react-autosuggest__suggestions-list {
+  width: 27vw;
+}
+}
+
+  @media (max-width: 375px) {
+    .search-bar {
+      width: 80%;
+    }
+ 
+    form{
+      margin-top: 15vh;
+      justify-content: space-between;
+      width: 98%;
+      align-self: center;
+      display: flex;
+      margin-left: 1%;  
+      background-color: transparent;
+      border-color: transparent;
+      border: transparent; 
+      outline: none;
+      text-align: center;
+    }
+    .search-bar-input {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 30vw;
+      height: 40px;
+      background-color: #FDF2E5;
+      border: 1px solid #FDF2E5;
+      border-radius: 5px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+      color: #3400A1;
+      font-family: 'Livvic', sans-serif;
+      font-size: 12px;
+      text-indent: 10px;
+    }
+    
+    .search-bar-input input {
+      flex-grow: 1; /* Hace que el campo de entrada ocupe el espacio restante */
+      border: none; /* Elimina el borde del campo de entrada */
+      background-color: transparent; /* Hace que el fondo del campo de entrada sea transparente */
+      font-family: 'Livvic', sans-serif;
+      color: #3400A1;
+      font-size: 16px;
+      padding-right: 30%;
+    }
+    
+    .search-bar-x {
+      position: absolute;
+      left: 29%; /* Ajusta la posición a la derecha según sea necesario */
+      transform: translate(-123%,-150%); /* Centra el botón horizontal y verticalmente */
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #3400A1;
+      font-size: 20px;
+      z-index: 1;
+    }
+
+    /* react-autowhatever-1 */
+    .react-autosuggest__suggestions-list {
+      width: 30vw;
+      font-size: 12px;
+    }
+    
+
+
+.search-bar-date-start{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 17vw;
+  height: 40px;
+  margin-left: 10%;
+  margin-right: 0%;
+  border-radius: 5px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 9px;
+  text-indent: 13px;
+}
+
+.search-bar-date-end{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  right: 100%;
+  width: 17vw;
+  height: 40px;
+  margin-left: 20%;
+  margin-right: 0%;
+  border-radius: 5px;
+  border: 1px solid #FDF2E5;
+  background-color: #FDF2E5;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #3400A1;
+  font-family: 'Livvic', sans-serif;
+  font-size: 9px;
+  text-indent: 13px;
+}
+
+.calendar-icon-start{
+  display: none;
+}
+
+.calendar-icon-end{
+  display: none;
+}
+
+
+.search-bar-trash-button {
+  display: flex; /* Establecer el display en flex para los elementos internos */
+  /* justify-content: space-between; */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 15%;
+  height: 45px;
+  margin-left: 7%;
+  background-color: #FDF2E5;
+  color: #FFAE4F;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  padding: 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  cursor: pointer; /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  font-size: 10px;
+
+}
+
+.search-bar-button {
+  display: flex; /* Establecer el display en flex para los elementos internos */
+  justify-content: space-between; /* Espacio entre los elementos internos */
+  align-items: center; /* Centrar verticalmente los elementos */
+  width: 15%; /* Ocupar todo el ancho del botón */
+  height: 45px; /* Cambiar la altura */
+  margin-left: 2%;
+  background-color: #3400A1; /* Color de fondo del botón */
+  color: #FFAE4F; /* Color del texto */
+  font-weight:600;
+  border: none; /* Eliminar borde */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 5px 20px; /* Espacio interno */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Livvic', sans-serif;
+  cursor: pointer; /* Cambiar el cursor al estilo de puntero al pasar el ratón */
+  transition: background-color 0.2s;
+  font-size: 12px;
+}
+.search-text-trash {
+visibility: hidden;  
+}
+
+.search-text {
+  margin-right: 40%;
+  visibility: hidden;  
+}
+
+.search-icon-trash {
+  margin-right: 1.5rem;
+  /* Espacio entre el icono y el texto de búsqueda */
+  font-size: 2.5em;
+
+}
+  }
+
+#date-picker-1 {
+  position: relative;
+}
+
+#calendar-icon-1 {
+  top: 24px;
+  right: 96px;
+  position: absolute;
+}
+
+#date-picker-2 {
+  position: relative;
+}
+
+#calendar-icon-2 {
+  top: 24px;
+  right: 0;
+  position: absolute;
+}
+
+#search-text-trash {
+  padding-left: 20px;
+}

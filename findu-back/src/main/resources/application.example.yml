@@ -1,0 +1,43 @@
+# Configuración del puerto de la app.
+server:
+  port: 8080
+# MYSQL: Configuración de la conexión con la base de datos.
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/findu?useSSL=false&serverTimezone=UTC
+    username: root
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+#    properties:
+#      hibernate:
+#        format_sql: true
+#    show-sql: true
+# Configuración para el envío de correos electrónicos.
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: bookingfindu@gmail.com
+    password: grbzeinqoixhdgeq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          connectiontimeout: 5000
+          timeout: 5000
+          writetimeout: 5000
+# Configuración del tamaño de los archivos que se suben al servidor, además del directorio.
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+media:
+  location: mediafiles
+url:
+  front: http://localhost:5173

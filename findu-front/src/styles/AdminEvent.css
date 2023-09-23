@@ -1,0 +1,143 @@
+.admin-event-section {
+  justify-content: space-between;
+  /* Espacio entre los elementos */
+  align-items: center;
+  padding: 20px;
+  /* Puedes ajustar el padding según tu diseño */
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+
+}
+
+.admin-add-conteiner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3%;
+}
+
+.manage-events {
+  color: #3400A1;
+  margin-left: 2%;
+  margin-bottom: 0%;
+  font-family: 'Livvic', sans-serif;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 3%;
+}
+
+.add-event-button {
+  justify-items: center;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-family: 'Livvic', sans-serif;
+  color: white;
+  background-color: #FFAE4F;
+  cursor: pointer;
+  padding: 5%;
+  width: 15em;
+}
+
+.admin-event-sectionn {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+
+}
+
+.event-id{
+ font-family: Livvic;
+ font-weight: 700;
+ margin-left: 20px;
+}
+
+.event-link {
+  text-decoration: none; /* Sin subrayado */
+  cursor: pointer; /* Cambia el cursor a una mano cuando se coloca sobre el enlace */
+  display: flex; /* Cambia el enlace a un bloque para ocupar todo el ancho disponible */
+  width: 100%; 
+  text-align: left; 
+}
+
+.event-label {
+  margin-left: 2%;
+  font-weight: bold;
+  color: #FFAE4F;
+}
+
+
+.product-box {
+  width: 100%;
+  background-color: rgba(253, 242, 229, 1);
+  border-radius: 28px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Livvic', sans-serif;
+  color: #FFAE4F;
+
+}
+
+.product-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-right: 2%;
+
+}
+
+
+.images {
+  display: flex;
+}
+
+.event-image {
+  margin-top: 6px;
+}
+
+.image-delete-margin {
+  margin-left: 30px; /* Margen entre las imágenes */
+}
+
+.image-delete {
+  cursor: pointer; 
+  transition: transform 0.5s ease-in-out;
+}
+
+.image-delete:hover {
+  transform: scale(1.1);
+  /* Hacer que la imagen sea un poco más grande en el hover */
+}
+
+
+/* Estilo para las tooltips */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:hover::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%; /* Coloca la tooltip encima del elemento */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0; /* Inicialmente invisible */
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+[data-tooltip]:hover::before {
+  opacity: 1; /* Hacer visible al pasar el puntero */
+  visibility: visible;
+}

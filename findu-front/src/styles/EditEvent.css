@@ -1,0 +1,157 @@
+/* Estilo para el contenedor del formulario */
+.form-container {
+  text-align: left;
+  margin-top: 13vh;
+  margin-bottom: 25vh;
+}
+
+.form-container p {
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/* Estilo para el título del formulario */
+.edit_event {
+  font-family: 'Livvic', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3400A1;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* Estilo para el formulario */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* Estilo para las columnas del formulario */
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: calc(50% - 0px);
+  margin-bottom: 20px;
+}
+
+/* Estilo para los campos de entrada y etiquetas en las columnas */
+.column .inputbox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.column .input-field-container {
+  width: 100%;
+  position: relative;
+}
+
+.column .input-field {
+  width: 90%;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  background-color: #FDF2E5;
+}
+
+.column label {
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  color: #3400A1;
+  margin-right: 10px;
+}
+
+/* Estilo para los campos de selección en las columnas */
+.column select {
+  width: 93%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+  background-color: #FDF2E5;
+  color: #E2983B;
+  appearance: none;
+}
+
+.column select option {
+  background-color: #FDF2E5;
+}
+
+/* Estilo para las áreas de texto en las columnas */
+.column textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 28px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+}
+
+/* Estilo para campo description */
+.description-box {
+  position: relative;
+  width:90%;
+  text-align: left;
+  background-color: #FDF2E5;
+  border-radius: 28px;
+  padding: 10px;
+  margin-top: 0;
+}
+
+.description-box label {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3400A1;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.description-box .input-field {
+  width: 95%;
+  padding: 5px;
+  height: 30px;
+  border-radius: 28px;
+  font-family: 'Livvic', sans-serif;
+  font-size: 16px;
+}
+
+/* Estilo para el button */
+.update-button {
+  width: 90%;
+  height: 55px;
+  margin-bottom: 0px;
+  background: #FFAE4F;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.update-button:hover {
+  background-color: #E2983B;
+}
+
+

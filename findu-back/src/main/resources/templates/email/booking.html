@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmación de la Reserva</title>
+    <style>
+        body {
+            font-family: Tahoma, Geneva, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #FDF2E5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            margin-bottom: 20px;
+            color: #3400A1;
+        }
+
+        .reservation-details {
+            margin-bottom: 20px;
+            color: #3400A1;
+        }
+
+        .reservation-details ul {
+            margin-left: 68px; /* Agrega un margen izquierdo para separar del borde */
+        }
+
+        .reservation-details li {
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin: 5px 0; /* Agrega un espacio vertical entre los elementos li */
+            padding-left: 0; /* Establece el relleno izquierdo en 0 para que no haya sangría */
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Confirmación de la Reserva</h1>
+    </div>
+    <div class="reservation-details">
+        <p>¡Hola [USER_FIRST_NAME]!</p>
+        <p>Tu reserva para el evento <strong>[EVENT_NAME]</strong> ha sido confirmada.</p>
+        <p>Detalles de la reserva:</p>
+        <ul>
+            <li><strong>Número de reserva:</strong> [BOOKING_NUMBER]</li>
+            <li><strong>Fecha:</strong> [BOOKING_DATE]</li>
+            <li><strong>Hora:</strong> [EVENT_TIME]</li>
+            <li><strong>Dirección:</strong> [EVENT_ADDRESS]</li>
+            <li><strong>Precio:</strong> $[BOOKING_PAYMENT_AMOUNT]</li>
+            <li><strong>Cantidad de tickets:</strong> [BOOKING_TICKETS]</li>
+            <li><strong>Reservado por:</strong> [USER_FULL_NAME]</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
